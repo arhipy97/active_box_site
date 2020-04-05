@@ -1,0 +1,65 @@
+//out: false
+
+.project_container{
+    max-width: 118.75rem;
+    margin: 0 auto;
+    @media @md-breakpoint{
+        display: flex;
+    }
+    .pr_row{
+        display: flex;
+        @media @md-breakpoint{
+            display: flex;
+            flex-direction: column;
+        }
+        .work_pr{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .pr_name_hover{
+                position: absolute;
+                background-color: @tomato;
+                text-align: center;
+                top: 0rem;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 0.8;
+                }
+                .link_work{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    .text_top{
+                        @media @md-breakpoint{
+                            font-size: 0.8rem;
+                            margin-bottom: 0.2rem;
+                        }
+                        font-family: @raleway;
+                        font-size: 1rem;
+                        color: @white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin-bottom: 1rem;
+                    }
+                    .text_bottom{
+                        @media @md-breakpoint{
+                            font-size: 0.8rem;
+                        }
+                        font-family: @raleway;
+                        font-size: 1rem;
+                        color: @white;
+                        font-weight: 200;
+                        margin-bottom: 0rem;
+                    }
+                }
+            }
+        }
+    }  
+}

@@ -1,0 +1,60 @@
+//out: false
+.carousel_section{
+    .container{
+        max-width: 118.75rem;
+        margin: 0 auto;
+        .carousel-indicators{
+            @media @md-breakpoint{
+                bottom:0;
+            }
+            justify-content: flex-end;
+            bottom: 15%;
+            right: 11%;
+            li{
+                height: 0.7rem;
+                width: 0.7rem;
+                border-radius: 50%;
+            }
+        }
+        .carousel-inner{
+            .carousel-item{
+                position: relative;
+                .carousel_img{
+                    float: left;
+                    width: 50%;
+                }                    
+                .carousel_next_block{
+                    position: absolute; 
+                    right:0;
+                    top:0;
+                    bottom:0;
+                    width: 50%;
+                    background-color: #53354a;
+                    .text_carousel{
+                        padding-top: 5%;
+                        padding-left: 10%;
+                        .text_top{
+                            @media @md-breakpoint{
+                                font-size: 1rem;
+                            }
+                            font-family: @cardo;
+                            font-size: 2.25rem;
+                            color: @white;
+                        }
+                        .text_bottom{
+                            @media @md-breakpoint{
+                                font-size: 0.7rem;
+                            }
+                            font-family: @raleway;
+                            font-size: 0.7rem;
+                            color: @white;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+
+                    }
+                }
+            }        
+        }
+    }  
+}

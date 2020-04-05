@@ -1,0 +1,43 @@
+// out: false
+
+.features_section{
+    .container{
+        @media @md-breakpoint{
+            padding: 3rem 0;
+        }
+        padding: 7.5rem 0;
+        text-align: center;
+        background-color: @white;
+        max-width: 75rem;
+        margin: 0 auto;
+        .col-md-4{
+            padding: 0 2%;
+        .feature_img{
+            margin-bottom: 2rem;
+        }
+        .feture_text{
+            .top_text{
+                @media @md-breakpoint{
+                    margin-bottom: 1rem;
+                }
+                font-family: @raleway;
+                font-size: 1rem;
+                color: @black;
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+                font-weight: bold;
+            }
+            .bottom_text{
+                @media @md-breakpoint{
+                    font-size: 0.8rem;
+                }
+                font-family: @raleway;
+                font-size: 1rem;
+                color: @grey;
+                margin-bottom: 4.5rem;
+            }
+            .bot{margin-bottom: 0;}
+        }
+        }
+    }
+}

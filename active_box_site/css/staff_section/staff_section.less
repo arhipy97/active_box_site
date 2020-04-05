@@ -1,0 +1,70 @@
+//out: false
+
+.staff_section{
+    .container{
+        @media @md-breakpoint{
+            padding: o auto;
+            text-align: center;
+        }
+        max-width: 75rem;
+        background-color: @white;
+        padding: 6.25rem 0;
+        .col-md-3{
+            .staff_photo{
+                img{
+                    width: 100%;
+                }
+            }
+            .staff_text{
+                font-family: @raleway;
+                .staff_name{
+                    font-size: 1.5rem;
+                    color:@black;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                }
+                .staff_status{
+                    font-size: 0.9rem;
+                    color: @tomato;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    margin-bottom: 2rem;
+                }
+                .staff_description{
+                    font-size: 0.8rem;
+                    color: @grey;
+                    margin-bottom: 2rem;
+                }
+            }
+            .staff_connection{
+                @media @md-breakpoint{
+                    justify-content: center;
+                }                
+                display: flex;
+                a{
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.2);
+                        text-decoration: none;
+                    }
+                    .social_icons{
+                        @media @md-breakpoint{
+                            margin-bottom: 1rem;
+                        }
+                        border:0.0625rem solid lighten(@grey, 50%);
+                        margin-right: 0.4rem;
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        i{
+                            font-size: 1rem;
+                            color:lighten(@grey, 50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
